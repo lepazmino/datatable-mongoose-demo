@@ -17,9 +17,8 @@ Installation
 ===============
 
 ```sh
-git clone git@github.com:lepazmino/datatable-mongoose-example.git
-cd datatable-mongoose-example
-npm install
+git clone https://github.com/lepazmino/datatable-mongoose-demo.git
+cd datatable-mongoose-demo && npm install
 bower install
 
 ```
