@@ -31,7 +31,7 @@ db.once('open', function callback ()
 
 exports.getDataForDataTable = function getData (request, response) {
   //"type.typeName" : "Trolley"
-  console.log("Get Request for Data Table made with data: ", request.query);
+  //console.log("Get Request for Data Table made with data: ", request.query);
   MyModel.dataTable(request.query, function (err, data) {
     response.send(data);
   });
