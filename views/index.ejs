@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datatable Test</title>
+	<link rel="stylesheet" type="text/css" href="/datatables/media/css/jquery.dataTables.css">
+	<script type="text/javascript" src="/datatables/media/js/jquery.js"></script>
+	<script type="text/javascript" src="/datatables/media/js/jquery.dataTables.js"></script>
+</head>
+<body>
+	<table id="reservationTable" class="stripe" width="100%" cellspacing="0">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Start Date</th>
+				<th>End Date</th>
+				<th>Confirmation</th>
+			</tr>
+		</thead>
+	</table>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#reservationTable').dataTable({
+  		"bProcessing" : true,
+  		"bServerSide" : true,
+		  "sAjaxSource" : '/mongo/get/datatable',
+		  "aoColumns" : [
+		    { "mData" : "name" },
+		    { "mData" : "startDate" },
+		    { "mData" : "endDate" },
+		    { "mData" : "confirmationCode" }
+		  ]
+		});
+	});
+	</script>
+</body>
+</html>
