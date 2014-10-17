@@ -1,17 +1,16 @@
-#datatable-mongoose-example
+datatable-mongoose-example
 ==========================
-
 Working Demo of npm module mongoose-datatable (https://github.com/eherve/mongoose-datatable). 
 
 Based on article http://blog.dephyned.com/2014/01/24/using-jquery-datatables-with-nodejs-and-mongodb-using-mongoose-datatables/
 
-## Prerequisites
+Prerequisites
 ================
 
--MongoDB
--NodeJS
--NPM
--Bower
+  - MongoDB
+  - NodeJS
+  - NPM
+  - Bower
 
 
 Installation
