@@ -8,37 +8,40 @@ Based on article http://blog.dephyned.com/2014/01/24/using-jquery-datatables-wit
 ## Prerequisites
 ================
 
-MongoDB
-NodeJS
-NPM
-Bower
+-MongoDB
+-NodeJS
+-NPM
+-Bower
 
 
-## Installation
-==============
+Installation
+===============
 
-  git clone git@github.com:lepazmino/datatable-mongoose-example.git
+```sh
+git clone git@github.com:lepazmino/datatable-mongoose-example.git
+cd datatable-mongoose-example
+npm install
+bower install
 
-  cd datatable-mongoose-example
+```
 
-  npm install
-  
-  bower install
-
-
-## Database seeding
+Database seeding
 ================
+Run the command:
 
-  seed
-
+```sh
+seed
+```
 
 The file seed.json contains the database that will be populated using the .json files on /seeds/
 The collection will have the name of the file. Note: Letter case is important.
 
 In this case, test_seed is used, and the collection is reservations
 
-## Starting the server
+Starting the server
 =================
+```sh
+npm start
+```
 
-  npm install
-
+Open up a browser and head to http://localhost:3000
