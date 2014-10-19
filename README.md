@@ -25,6 +25,7 @@ bower install
 
 Database seeding
 ================
+Using node-mongo-seeds, for more info check: (https://github.com/toymachiner62/node-mongo-seeds)
 Run the command:
 
 ```sh
