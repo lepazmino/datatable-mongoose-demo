@@ -20,14 +20,14 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#reservationTable').dataTable({
-  		"bProcessing" : true,
-  		"bServerSide" : true,
-		  "sAjaxSource" : '/mongo/get/datatable',
-		  "aoColumns" : [
-		    { "mData" : "name" },
-		    { "mData" : "startDate" },
-		    { "mData" : "endDate" },
-		    { "mData" : "confirmationCode" }
+  		processing : true,
+  		serverSide : true,
+      ajax : { url: '/mongo/get/datatable' },
+		  columns : [
+		    { data : "name" },
+		    { data : "startDate" },
+		    { data : "endDate" },
+		    { data : "confirmationCode" }
 		  ]
 		});
 	});

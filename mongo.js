@@ -9,7 +9,7 @@ var dates;
 var reservationsSchema;
 var dateSchema;
 
-DataTable.configure({ verbose: false, debug : false });
+DataTable.configure({ verbose: true, debug : true });
 mongoose.plugin(DataTable.init);
 mongoose.connect(dbURI);
 
